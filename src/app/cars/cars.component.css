@@ -1,9 +1,22 @@
-/* HeroesComponent's private CSS styles */
+.content {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  justify-content: space-around;
+}
+
+h2 {
+  font-size: 32px;
+}
+
 .cars {
-    margin: 0 0 2em 0;
+    margin: 0 0 20px 0;
     list-style-type: none;
     padding: 0;
-    width: 15em;
+    width: 200px;
+    height: 50px;
   }
   
   .cars li {
@@ -14,14 +27,13 @@
     flex: 1;
     cursor: pointer;
     position: relative;
-    left: 0;
-    background-color: #EEE;
+    background-color: goldenrod;
     margin: .5em;
-    padding: 0;
+    padding-left: 75px;
     border-radius: 4px;
     display: flex;
     align-items: stretch;
-    height: 1.8em;
+    height: 50px;
   }
   
   .cars button:hover {
@@ -31,7 +43,7 @@
   }
   
   .cars button:active {
-    background-color: #525252;
+    background-color: darkcyan;
     color: #fafafa;
   }
   
@@ -41,7 +53,7 @@
   }
   
   .cars button.selected:hover {
-    background-color: #505050;
+    background-color: darkcyan;
     color: white;
   }
   
@@ -55,7 +67,7 @@
     font-size: small;
     color: white;
     padding: 0.8em 0.7em 0 0.7em;
-    background-color: #405061;
+    background-color: chocolate;
     line-height: 1em;
     margin-right: .8em;
     border-radius: 4px 0 0 4px;
@@ -63,4 +75,11 @@
   
   .cars .name {
     align-self: center;
+  }
+
+  .labels {
+   display: flex;
+   flex-direction: column;
+   margin: 20px;
+   justify-content: space-around;
   }
