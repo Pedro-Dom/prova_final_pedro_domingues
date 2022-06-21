@@ -1,11 +1,25 @@
+<div class="content">
+<div>
 <h2>Carros</h2>
-
 <ul class="cars">
-  <li *ngFor="let car">
+  <li *ngFor="let car of cars">
     <button [class.selected]="car === selectedCar" type="button" (click)="onSelect(car)">
-      <span class="name">{{car}}</span>
+      <span class="name">{{car.model}}</span>
     </button>
   </li>
 </ul>
+</div>
 
-<app-car-detail [car]="selectedCar"></app-car-detail>
+<div *ngIf="selectedCar">
+    <h2>{{selectedCar.model}}</h2>
+    <div>Código: {{selectedCar.code}}</div>
+    <div class="labels">
+      <label for="car-name">Carro: </label>
+      <input id="car-model" [(ngModel)]="selectedCar.model" placeholder="name">
+      <label for="car-price">Preço: </label>
+      <input id="car-price" [(ngModel)]="selectedCar.price" placeholder="price">
+      <label for="car-year">Ano: </label>
+      <input id="car-year" [(ngModel)]="selectedCar.year" placeholder="year">
+    </div>
+  </div>
+</div>

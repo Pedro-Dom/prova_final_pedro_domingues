@@ -1,0 +1,28 @@
+{
+    "cars": [
+        {
+            "code": 1,
+            "model": "Polo",
+            "price": "45000",
+            "year": 2010
+        },
+        {
+            "id": 2,
+            "name": "Golf",
+            "price": 80000,
+            "year": 2017
+        },
+        {
+            "id": 3,
+            "name": "C3",
+            "price": 67000,
+            "year": 2020
+        },
+        {
+            "id": 4,
+            "name": "C4",
+            "price": 35000,
+            "year": 2009
+        }
+    ]
+}
