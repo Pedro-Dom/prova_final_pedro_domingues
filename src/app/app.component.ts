@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CARS } from './mock-cars';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'prova_final_pedro_domingues';
+  title = 'Prova Final Pedro Domingues';
 }
